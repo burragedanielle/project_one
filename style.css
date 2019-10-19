@@ -4,6 +4,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    font-family: 'Roboto', sans-serif;
 }
 
 #pageTitle {
@@ -11,6 +12,21 @@ body {
     font-size: 3.5vw;
     margin-top: 10px;
     margin-left: 20px;
+}
+
+#sunPictures {
+    /* align-items: flex-start; */
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: flex-end;
+}
+
+
+
+img {
+    
+
 }
 
 #apiGrid {
@@ -28,10 +44,10 @@ body {
     margin-top: 100px;
 }
 
-
-
 .formText{
-    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Roboto', sans-serif;
+    text-transform: lowercase;
+    letter-spacing: 3px;
     font-size: 20px;
 }
 
@@ -55,7 +71,9 @@ input {
     border: none;
     display: block;
     outline: none;
-    opacity: .4;
+    /* opacity: .4; */
+    background: rgba(0, 0, 0, 0.308);
+    background-color: transparent;
     width: 200px;
     height: 50px;
     top: 35px;
@@ -65,6 +83,10 @@ input {
     -webkit-box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
     box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
   }
+
+.form-control {
+    color: #333;
+}
 
 .column {
     list-style-type: none;
