@@ -1,31 +1,31 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-
-  <title>The Golden Hour</title>
-  
-
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Testing APIs</title>
 </head>
 
 <body>
-    <p id="pageTitle">The Golden Hour</p>
 
-    <div id="citySearch">
-        <input type="text" placeholder="Find your city..."/>
-      </div>
+    <input id="city-name" type="text">City Name Here</input>
 
-    <div class="container" id="apiGrid">
-        <div class="row">
-          <div class="col-md-6">Sunrise/Sunset times here</div>
-          <div class="col-md-6">Sunrise/Sunset photos here</div>
-        </div>
-    </div>
-  
-</body>
+    <input id='state-id' type='type'>State Name Here</input>
+
+    <button id='submit'>Submit Here</button>
+
+    <div id='lat'></div>
+    <div id='long'></div>
+
+
+    <div id='results'></div>
+
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="javascript/app.js"></script>
+
+    </body>
+
 </html>
