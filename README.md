@@ -1,2 +1,2 @@
 # project_one
-KU Bootcamp Project Pne 
+KU Bootcamp Project One 
