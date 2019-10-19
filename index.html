@@ -1,8 +1,12 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Testing APIs</title>
+</head>
 
   <title>The Golden Hour</title>
   
@@ -21,16 +25,16 @@
         <div class="row" id="inputFields">
             <div class="form-group column1 col-md-5">
                 <label class="formText">City:</label>
-                <input type="text" class="form-control" id="name" aria-describedby="emailHelp" name="muverName">
+                <input type="text" class="form-control" id="city-name" aria-describedby="emailHelp" name="muverName">
             </div>
     
             <div class="form-group column2 col-md-5">
                 <label class="formText">State:</label>
-                <input type="text" class="form-control" id="name" aria-describedby="emailHelp" name="muverPhone">
+                <input type="text" class="form-control" id="state-id" aria-describedby="emailHelp" name="muverPhone">
             </div>
 
             <div class="form-group column3 col-md-2">
-              <button type="submit" class="btn btn-light mb-2">Go</button>
+              <button id="submit" type="submit" class="btn btn-light mb-2">Go</button>
             </div>
         </div>
     </div>
@@ -45,10 +49,20 @@
           </div>
       </div>
     </div>
+  
+   <div id='lat'></div>
+    <div id='long'></div>
+   <div id='results'></div>
+
 
     <div class="container" id="sunPictures">
       pictures go here
     </div>
+  
+  
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="javascript/app.js"></script>
   
 </body>
 </html>
