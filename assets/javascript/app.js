@@ -38,8 +38,11 @@ function callTimes() {
     var long = $("#long").html();
     console.log(lat);
     console.log(long);
+
+    $("#lat").hide();
+    $("#long").hide();
     // construct queryURL with latitude and longitude from Google
-    var queryURL = "https://api.sunrise-sunset.org/json?lat=" + lat + "&lng=" + long + "date=" + userDatePick + "&formatted=0";
+    var queryURL = "https://api.sunrise-sunset.org/json?lat=" + lat + "&lng=" + long + "&formatted=0";
     // Sunrise-Sunset API
     $.ajax({
         url: queryURL,
