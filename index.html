@@ -2,70 +2,71 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Testing APIs</title>
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <title>The Golden Hour</title>
-  
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+
+  <!-- JQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <h1 id="pageTitle">The Golden Hour</h1>
+  <h1 id="pageTitle">The Golden Hour</h1>
 
-    <div class="container">
-        <div class="row" id="inputFields">
-            <div class="form-group column1 col-md-5">
-                <label class="formText">City:</label>
-                <input type="text" class="form-control" id="city-name" aria-describedby="emailHelp" name="muverName">
-            </div>
-    
-            <div class="form-group column2 col-md-5">
-                <label class="formText">State:</label>
-                <input type="text" class="form-control" id="state-id" aria-describedby="emailHelp" name="muverPhone">
-            </div>
+  <div class="container">
+    <div class="row" id="inputFields">
+      <div class="form-group column1 col-md-5">
+        <label class="formText">City:</label>
+        <input type="text" class="form-control" id="city-name" aria-describedby="emailHelp" name="muverName">
+      </div>
 
-            <div class="form-group column3 col-md-2">
-              <button id="submit" type="submit" class="btn btn-light mb-2">Go</button>
-            </div>
-        </div>
-    </div>
+      <div class="form-group column2 col-md-5">
+        <label class="formText">State:</label>
+        <input type="text" class="form-control" id="state-id" aria-describedby="emailHelp" name="muverPhone">
+      </div>
 
-    <div class="container" id="sunTimes">
-      <div class="row">
-        <div class="col-md-6" id="sunrise">
-          <p>sunrise times can go here</p>
-        </div>
-          <div class="col-md-6" id="sunset">
-            <p>sunset times can go here</p>
-          </div>
+      <div class="form-group column3 col-md-2">
+        <button id="submit" type="submit" class="btn btn-light mb-2">Go</button>
       </div>
     </div>
-  
-   <div id='lat'></div>
-    <div id='long'></div>
-   <div id='results'></div>
+  </div>
 
-
-    <div class="container" id="sunPictures">
-      pictures go here
+  <div class="container" id="sunTimes">
+    <div class="row">
+      <div class="col-md-6" id="sunrise">
+        <p>sunrise times can go here</p>
+      </div>
+      <div class="col-md-6" id="sunset">
+        <p>sunset times can go here</p>
+      </div>
     </div>
-  
+  </div>
 
-    <!-- JAVASCRIPT -->
-  
-    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="assets/javascript/app.js"></script>
-    <script src="assets/javascript/images.js"></script>
-  
+  <div id='lat'></div>
+  <div id='long'></div>
+  <div id='results'></div>
+
+
+  <div class="container" id="sunPictures">
+    pictures go here
+  </div>
+
+
+  <!-- JAVASCRIPT -->
+  <script src="assets/javascript/app.js"></script>
+  <script src="assets/javascript/images.js"></script>
+
 </body>
+
 </html>

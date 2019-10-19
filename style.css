@@ -66,13 +66,12 @@ input {
     box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
   }
 
-.images {
+.column {
     list-style-type: none;
-    display: inline;
 }
 
 li {
-    display: inline;
+    display: inline; 
 }
 
 img {

@@ -1,16 +1,11 @@
 $('#submit').on('click', function () {
     event.preventDefault();
 
-    var cityName = ''; 
+    var cityName = '';
 
     cityName = $('#city-name').val().trim();
 
-    console.log(cityName);
-
     var queryURL = 'https://api.imgur.com/3/gallery/search/?q_all=' + cityName + ' sunset';
-
-    console.log(queryURL);
-
 
     var settings = {
         "async": true,
@@ -24,23 +19,39 @@ $('#submit').on('click', function () {
 
     $.ajax(settings).done(function (response) {
 
-        var photoHTML = '<ul class= images>';
+        var imageArray = [];
+
+        var photoHTML = '<ul class= column>';
         //Loop through JSON data
-        $.each(response.data, function (i, images) {
-            if (!images.is_album) {
-                photoHTML += '<li>';
-                photoHTML += '<img src="' + images.link + '"></li>';
+
+        $.each(response.data, function (i, obj) {
+
+            if (obj.is_album) {
+                if (obj.images[0].type === "image/jpeg" || obj.images[0].type === "image/png") {
+                    imageArray.push(response.data[i])
+                }
             }
-            if (images.is_album) {
-                $.each(images.images, function (i, albumImages) {
-                    photoHTML += '<li>';
-                    photoHTML += '<img src="' + albumImages.link + '"></li>';
-                });
+            else {
+                if (obj.type === "image/jpeg" || obj.type === "image/png") {
+                    imageArray.push(response.data[i])
+                }
+            }
+            
+        })
+
+        $.each(imageArray, function (i, obj) {
+            if (!obj.is_album) {
+                photoHTML += '<li>';
+                photoHTML += '<img src="' + obj.link + '"></li>';
+            }
+            if (obj.is_album) {
+                photoHTML += '<li>';
+                photoHTML += '<img src="' + obj.images[0].link + '"></li>'
             }
         }); // end each
 
         photoHTML += '</ul>';
-        $('#lat').html(photoHTML);
+        $('#sunPictures').html(photoHTML);
 
     })
 });
