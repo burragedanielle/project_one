@@ -15,11 +15,13 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  
   <!-- JQUERY -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
 </head>
 
 <body>
@@ -36,8 +38,13 @@
         <label class="formText">State:</label>
         <input type="text" class="form-control" id="state-id" aria-describedby="emailHelp" name="muverPhone">
       </div>
+      
+      <div class="form-group column3 col-md-5">
+      <label class="formText">Date:</label>
+      <input type="text" class="form-control" id="datepicker">
+      </div>
 
-      <div class="form-group column3 col-md-2">
+      <div class="form-group column4 col-md-2">
         <button id="submit" type="submit" class="btn btn-light mb-2">Go</button>
       </div>
     </div>

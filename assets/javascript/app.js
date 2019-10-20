@@ -1,8 +1,8 @@
-
+$(document).ready(function() {
 var latitude;
 var longitude;
 
-
+$( "#datepicker" ).datepicker();
 
 $('#submit').on('click', function () {
 
@@ -36,13 +36,14 @@ function callTimes() {
 
     var lat = $("#lat").html();
     var long = $("#long").html();
+    var date= $("#datepicker").val();
     console.log(lat);
     console.log(long);
 
     $("#lat").hide();
     $("#long").hide();
     // construct queryURL with latitude and longitude from Google
-    var queryURL = "https://api.sunrise-sunset.org/json?lat=" + lat + "&lng=" + long + "&formatted=0";
+    var queryURL = "https://api.sunrise-sunset.org/json?lat=" + lat + "&lng=" + long + "&date=" + date + "&formatted=0";
     // Sunrise-Sunset API
     $.ajax({
         url: queryURL,
@@ -67,3 +68,4 @@ function callTimes() {
         $("#sunset").html(`<p>Local Evening Golden Hour is from: ${localGoldenSet} - ${localSetTime}`);
     });
 };
+});
