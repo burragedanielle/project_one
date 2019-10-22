@@ -64,8 +64,8 @@ function callTimes() {
         // instantiate the moment.js "moment" object for second golden hour, subtract one hour from localSetTime
         var localGoldenSet = moment(response.results.sunset).subtract(1, "hour").format("h:mm a");
         // write sunrise and sunset golden hours into the HTML
-        $("#sunrise").html(`<p>Local Morning Golden Hour is from: ${localRiseTime} - ${localGoldenRise}`);
-        $("#sunset").html(`<p>Local Evening Golden Hour is from: ${localGoldenSet} - ${localSetTime}`);
+        $("#sunrise").html(`<p>Local Morning Golden Hour is from <br><span class="gh-standout"> ${localRiseTime} - ${localGoldenRise}`);
+        $("#sunset").html(`<p>Local Evening Golden Hour is from <br><span class="gh-standout"> ${localGoldenSet} - ${localSetTime}`);
     });
 };
 });
