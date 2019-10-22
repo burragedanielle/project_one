@@ -9,6 +9,14 @@ body {
     height: 100vh;
 }
 
+.small-description {
+    margin-left: 0;
+    margin-right: 0;
+    color: #888888;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
 .heading {
     padding-top: 50px;
     margin: 0 auto;
@@ -16,10 +24,9 @@ body {
 
 .description {
     font-family: 'Be Vietnam', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     color: #f0bf56;
     justify-content: left;
-    
 }
 
 #sunTimes {
@@ -48,7 +55,6 @@ li {
     display: inline;
     flex-direction: column;
     margin-right: 40px;
-
 }
 
 #sunPictures {
@@ -57,48 +63,64 @@ li {
     justify-content: space-around; 
     align-items: flex-start; 
 
-    margin-top: 40px;
+    margin: 40px 0px
 }
 
+.separator {
+    color: #f0bf56;
+    margin: 0 auto 20px;
+    text-align: center;
+    position: relative;
+  }
+  .separator:before, .separator:after {
+    display: block;
+    width: 40%;
+    content: " ";
+    margin-top: 10px;
+    border: 1px solid #f0bf56;
+  }
+  .separator:before {
+    float: left;
+  }
+  .separator:after {
+    float: right;
+  }
 
 
-
-#apiGrid {
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    background-color: white;
-    opacity: .3;
-    height: 325px;
-    width: 1400px;
+#input-field-container {
+    margin-top: 40px;
 }
 
 #inputFields {
     margin: 0 auto;
-    margin-top: 100px;
 }
 
 .formText{
     font-family: 'Be Vietnam', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 20px;
+    font-size: 1rem;
+}
+
+.gh-standout {
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .btn {
     height: 37px;
-    margin-top: 39px;
+    margin-top: 33px;
     width: 100px;
-    background-color: #fff;
     /* opacity: .4; */
-    border: 1px solid #f0bf56;
-    color: #333;
+    background-color: #f0bf56;
+    color: #fff;
     text-transform: uppercase;
     font-weight: bold;
 }
 
 .btn:hover {
-    background-color: #f0bf56;
+    border: 1px solid #d4a53e;
+    background-color: #d4a53e;
     color: #fff;
 }
 
@@ -106,7 +128,16 @@ li {
 .photoDisplay {
     text-align: center;
     margin-top: 170px;
-    color: black;
+    /* color: black; */
+}
+
+#sunrise, 
+#sunset {
+    background: -webkit-linear-gradient(left, #333, #f0bf56);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: .95rem;
 }
 
 input {
@@ -152,12 +183,12 @@ img {
 
   /* FOOTER */
   .wrapper {
-      min-height: calc(100vh - 74px);
+      min-height: calc(100vh - 80px);
   }
 
   .footer {
       background-color: #bbbbbb;
       color: #fff;
       padding: 20px;
-      font-size: 12px;
+      font-size: 15px;
   }

@@ -34,12 +34,16 @@
       </div>
       <div class="row-9">
         <p class="description">Golden Hour is the period of daytime after sunrise or before sunset when daylight is redder
-          and softer, making it the perfect time to capture photographs.</p>
+          and softer, making it the perfect time to capture photographs. 
+        </p> 
       </div>
 
     </div>
 
-    <div class="container">
+    <div class="container" id="input-field-container">
+      <div class="row small-description">
+        <p>Plan your next Golden Hour project using your location and date.</p>
+      </div>
       <div class="row" id="inputFields">
         <div class="form-group column1 col-md-5">
           <label class="formText">City</label>
@@ -47,17 +51,12 @@
         </div>
 
         <div class="form-group column2 col-md-5">
-          <label class="formText">State</label>
+          <label class="formText">State (U.S.)</label>
           <input type="text" class="form-control" id="state-id" aria-describedby="emailHelp" name="muverPhone">
         </div>
-
-        <div class="form-group column3 col-md-2">
-          <button id="submit" type="submit" class="btn btn-light mb-2">Go</button>
-        </div>
-
-      
+ 
       <div class="form-group column3 col-md-5">
-      <label class="formText">Date:</label>
+      <label class="formText">Date</label>
       <input type="text" class="form-control" id="datepicker">
       </div>
 
@@ -68,11 +67,12 @@
     </div>
 
     <div class="container" id="sunTimes">
-      <div class="row">
-        <div class="col-md-6 sun-times" id="sunrise">
+      <div class="separator line-separator">♦</div>
+      <div class="row justify-content-between">
+        <div class="col-md-5 sun-times" id="sunrise">
 
         </div>
-        <div class="col-md-6 sun-times" id="sunset">
+        <div class="col-md-5 sun-times" id="sunset">
 
         </div>
       </div>
