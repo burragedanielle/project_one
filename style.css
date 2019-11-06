@@ -191,4 +191,7 @@ img {
       color: #fff;
       padding: 20px;
       font-size: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
   }
