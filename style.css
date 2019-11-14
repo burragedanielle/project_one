@@ -187,11 +187,10 @@ img {
   }
 
   .footer {
-      background-color: #bbbbbb;
-      color: #fff;
-      padding: 20px;
-      font-size: 15px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-  }
+    background-color: #bbbbbb;
+    color: #fff;
+    padding: 20px;
+    font-size: 15px;
+    bottom: 0;
+    width: 100%;
+}
